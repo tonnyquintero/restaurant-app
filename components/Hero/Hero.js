@@ -5,18 +5,6 @@ import styles from '../Hero/Hero.module.css'
 
 const Hero = () => {
 
-  // CODIGO QUE SI FUNCIONA EN JS SIN NEXT
-  // let prev = document.querySelector('.prev')
-  // let next = document.querySelector('.next')
-
-  //       next.addEventListener('click', function () {
-  //           let items = document.querySelectorAll('.item')
-  //           document.querySelector('.box').appendChild(items[0])
-  //       })
-  //       prev.addEventListener('click', function () {
-  //           let items = document.querySelectorAll('.item')
-  //           document.querySelector('.box').prepend(items[items.length - 1])
-  //       })
 
   const boxRef = useRef(null);
   const prevRef = useRef(null);
@@ -89,16 +77,14 @@ const Hero = () => {
                 </div>
         </div>
 
-        {/* <div className={styles.newbuttons}>
-            <span className={styles.anterior}></span>
-            <span className={styles.siguiente}></span>
-        </div> */}
 
         <div className={styles.buttons}>
             <span ref={prevRef} className={styles.prev}></span>
             <span ref={nextRef} className={styles.next}></span>
         </div>
     </section>
+
+    
 <h3 className={styles.fillText}>Disfruta de toda nuestra carta</h3>
 <div className={styles.fill}>
         <Image className={styles.fillImage} alt='food' width={250} height={300} src="/img1.png"/>
