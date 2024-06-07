@@ -136,12 +136,12 @@
       opacity: 1;
     }
   
-    .newbuttons span::after {
+    .buttons span::after {
       content: '';
       position: absolute;
       width: 50px;
       height: 50px;
-      border: 2px solid rebeccapurple;
+      border: 2px solid white;
       background-color: rebeccapurple;
       border-radius: 50%;
       cursor: pointer;
@@ -175,7 +175,7 @@
         }
       } 
   
-    .newbuttons span::before {
+    .buttons span::before {
       content: '';
       position: absolute;
       left: 18px;
@@ -192,7 +192,7 @@
       animation-iteration-count: 5;
     }
   
-    .newbuttons span:last-child::before {
+    .buttons span:last-child::before {
       content: '';
       position: absolute;
       left: initial;
